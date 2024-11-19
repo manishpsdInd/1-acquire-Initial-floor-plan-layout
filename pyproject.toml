@@ -1,7 +1,7 @@
 [project]
-name="project-ii"
+name="1-acquire-Initial-floor-plan-layout"
 version="0.0.1"
-authors=[{"name"="Ankit","email"="Ankit@gmail.com"}]
+authors=[{"name"="~manis","email"="manis@gmail.com"}]
 description="This is a Sample Package"
 requires-python= ">=3.10"
 classifiers = [
