@@ -10,3 +10,6 @@ OUTPUT_DIR = os.path.join(ROOT_PATH, "data/output")
 # Example specific file paths
 FLOORPLAN_IMAGE = os.path.join(INPUT_DIR, "floorplan.png")
 FLOORPLAN_DXF = os.path.join(INPUT_DIR, "floorplan.dxf")
+
+# Paths for video processing
+VIDEO_FILE = os.path.join(INPUT_DIR, "layout_video.mp4")
