@@ -7,7 +7,13 @@ def parse_cad_file(file_path):
     :return: Parsed layout as a dictionary
     """
     layout_data = {"walls": [], "doors": [], "furniture": []}
-    doc = ezdxf.readfile(file_path)
+
+    # Load the DXF file
+    try:
+        doc = ezdxf.readfile(file_path)
+    except ezdxf.DXFError as e:
+        raise ValueError(f"Error reading DXF file: {file_path}, {str(e)}")
+
     msp = doc.modelspace()
 
     # Extract lines (assumed to represent walls)
@@ -16,11 +22,13 @@ def parse_cad_file(file_path):
         end = (line.dxf.end.x, line.dxf.end.y)
         layout_data["walls"].append({"start": start, "end": end})
 
-    # Extract other elements like doors or furniture if available
-    for block in msp.query("INSERT"):
-        if block.dxf.name.lower() == "door":
-            layout_data["doors"].append({"position": (block.dxf.insert.x, block.dxf.insert.y)})
-        elif block.dxf.name.lower() == "furniture":
-            layout_data["furniture"].append({"position": (block.dxf.insert.x, block.dxf.insert.y)})
+    # Extract block inserts (e.g., doors, furniture)
+    for insert in msp.query("INSERT"):
+        name = insert.dxf.name.lower()
+        position = (insert.dxf.insert.x, insert.dxf.insert.y)
+        if "door" in name:
+            layout_data["doors"].append({"position": position})
+        elif "furniture" in name:
+            layout_data["furniture"].append({"position": position})
 
     return layout_data

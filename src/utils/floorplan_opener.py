@@ -2,7 +2,7 @@ import sys
 import ezdxf
 
 try:
-    doc = ezdxf.readfile("data/input/floorplan.png")
+    doc = ezdxf.readfile("data/input/img.png")
 except IOError:
     print(f"Not a DXF file or a generic I/O error.")
     sys.exit(1)
