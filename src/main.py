@@ -27,6 +27,17 @@ def image_main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+def visualize_image_layout():
+    parsed_image_layout_path = os.path.join(OUTPUT_DIR, "parsed_image_layout.json")
+    try:
+        visualize_layout(parsed_image_layout_path)
+    except FileNotFoundError as e:
+        print(f"File not found: {e}")
+    except ValueError as e:
+        print(f"Value error: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
 
 def video_main():
     video_file_path = os.path.join(INPUT_DIR, "layout_video.mp4")  # Video file
@@ -61,6 +72,9 @@ def visualize_video_layout():
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
-    #image_main()
-    #video_main()
+
+    image_main()
+    visualize_image_layout()
+
+    video_main()
     visualize_video_layout()
