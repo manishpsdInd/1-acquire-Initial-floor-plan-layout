@@ -1,4 +1,12 @@
 pip
+pandas
 opencv-python
 numpy
 ezdxf
+matplotlib
+torch
+torchvision
+timm
+openvino
+#git+https://github.com/intel-isl/MiDaS.git
+
