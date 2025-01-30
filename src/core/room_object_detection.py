@@ -71,4 +71,4 @@ def from_video():
 
 
 from_image()
-#from_video()
+from_video()

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/1-acquire-Initial-floor-plan-layout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1-acquire-Initial-floor-plan-layout.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="Using ultralytics/yolov5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/room_object_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/room_object_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +75,8 @@
       <recent name="$PROJECT_DIR$/data/input" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.room_object_detect">
-    <configuration name="room_object_detect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.room_object_detection">
+    <configuration name="room_object_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1-acquire-Initial-floor-plan-layout" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,7 +90,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/room_object_detect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/room_object_detection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.room_object_detect" />
+        <item itemvalue="Python.room_object_detection" />
         <item itemvalue="Python.video_edge_and_line_detection" />
       </list>
     </recent_temporary>
@@ -153,12 +152,25 @@
       <workItem from="1737071228704" duration="7139000" />
       <workItem from="1737201591154" duration="10151000" />
       <workItem from="1737274629375" duration="5918000" />
-      <workItem from="1738214544859" duration="5627000" />
+      <workItem from="1738214544859" duration="5986000" />
     </task>
+    <task id="LOCAL-00001" summary="Using ultralytics/yolov5">
+      <option name="closed" value="true" />
+      <created>1738251749544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738251749544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Using ultralytics/yolov5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using ultralytics/yolov5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
