@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="Using ultralytics/yolov5">
+    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="Using ultralytics/yolov5 - II">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/room_object_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/room_object_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/detected_walls.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/detected_walls.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/detected_walls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/room_object_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/room_object_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,30 +52,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.room_object_detect.executor": "Debug",
-    "Python.self_practice.executor": "Run",
-    "Python.video_edge_and_line_detection.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/manis/git/1-acquire-Initial-floor-plan-layout_master/data/output",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.room_object_detect.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.room_object_detection.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.self_practice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.video_edge_and_line_detection.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/manis/git/1-acquire-Initial-floor-plan-layout_master/data/input&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/input" />
       <recent name="$PROJECT_DIR$/data/output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/input" />
+      <recent name="$PROJECT_DIR$/data/output" />
     </key>
   </component>
   <component name="RunManager" selected="Python.room_object_detection">
@@ -132,8 +138,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
-        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
+        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
       </set>
     </attachedChunks>
   </component>
@@ -152,7 +158,13 @@
       <workItem from="1737071228704" duration="7139000" />
       <workItem from="1737201591154" duration="10151000" />
       <workItem from="1737274629375" duration="5918000" />
-      <workItem from="1738214544859" duration="5986000" />
+      <workItem from="1738214544859" duration="7295000" />
+      <workItem from="1738994381765" duration="112000" />
+      <workItem from="1739327733706" duration="18000" />
+      <workItem from="1740484416813" duration="4830000" />
+      <workItem from="1740507245550" duration="7364000" />
+      <workItem from="1740632618585" duration="4263000" />
+      <workItem from="1740643535240" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Using ultralytics/yolov5">
       <option name="closed" value="true" />
@@ -162,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738251749544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Using ultralytics/yolov5 - II">
+      <option name="closed" value="true" />
+      <created>1738251996155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738251996155</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Using ultralytics/yolov5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using ultralytics/yolov5" />
+    <MESSAGE value="Using ultralytics/yolov5 - II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using ultralytics/yolov5 - II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -197,6 +218,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$video_edge_and_line_detection.coverage" NAME="video_edge_and_line_detection Coverage Results" MODIFIED="1737219113324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$self_practice.coverage" NAME="self_practice Coverage Results" MODIFIED="1734751948614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$room_object_detection.coverage" NAME="room_object_detection Coverage Results" MODIFIED="1740636642702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$room_object_detect.coverage" NAME="room_object_detect Coverage Results" MODIFIED="1738251469467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
   </component>
 </project>
