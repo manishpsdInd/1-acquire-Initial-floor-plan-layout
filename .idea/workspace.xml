@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="Using ultralytics/yolov5 - II">
+    <list default="true" id="ca1a863a-2af3-45e6-9455-a1876971443c" name="Changes" comment="Using ultralytics/yolov5 - III">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/detected_walls.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/detected_walls.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/detected_walls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/dog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/room_object_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/room_object_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/input/layout_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/input/layout_video_2.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Aggregate_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/Aggregate_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Depth_Estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/Depth_Estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/cad_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/cad_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/image_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/numpy_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/numpy_encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/room_object_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/room_object_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/self_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/self_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/video_edge_and_line_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/video_edge_and_line_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/video_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/video_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/visualize_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/visualize_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/yolov5s.pt" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/phase1/yolov5s.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_cad_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_cad_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_image_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_image_processor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -54,6 +69,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.2D-grid-from-disparity-map&amp;edges.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DynamicGridMap.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DynamicGrid_ObjectPlacement.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.YOLO_MiDaS_GridLayout.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.YOLO_MiDaS_GridLayout_FIXED.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.draw_grid_&amp;_objects_manually.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.left-right-image-pair-stereo camera.executor&quot;: &quot;Run&quot;,
     &quot;Python.room_object_detect.executor&quot;: &quot;Debug&quot;,
     &quot;Python.room_object_detection.executor&quot;: &quot;Debug&quot;,
     &quot;Python.self_practice.executor&quot;: &quot;Run&quot;,
@@ -77,12 +99,15 @@
       <recent name="$PROJECT_DIR$/data/output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/core/phase2" />
+      <recent name="$PROJECT_DIR$/src/core/phase2/older_approach" />
+      <recent name="$PROJECT_DIR$/src/core/phase1" />
       <recent name="$PROJECT_DIR$/data/input" />
       <recent name="$PROJECT_DIR$/data/output" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.room_object_detection">
-    <configuration name="room_object_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.DynamicGridMap">
+    <configuration name="DynamicGridMap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1-acquire-Initial-floor-plan-layout" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,12 +116,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core/phase2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/room_object_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/phase2/DynamicGridMap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="video_edge_and_line_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DynamicGrid_ObjectPlacement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1-acquire-Initial-floor-plan-layout" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,12 +139,81 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core/phase2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/video_edge_and_line_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/phase2/DynamicGrid_ObjectPlacement.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="YOLO_MiDaS_GridLayout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="1-acquire-Initial-floor-plan-layout" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core/phase2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="YOLO_MiDaS_GridLayout_FIXED" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="1-acquire-Initial-floor-plan-layout" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core/phase2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout_FIXED.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="draw_grid_&amp;_objects_manually" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="1-acquire-Initial-floor-plan-layout" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core/phase2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/phase2/older_approach/draw_grid_&amp;_objects_manually.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,8 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.room_object_detection" />
-        <item itemvalue="Python.video_edge_and_line_detection" />
+        <item itemvalue="Python.DynamicGridMap" />
+        <item itemvalue="Python.DynamicGrid_ObjectPlacement" />
+        <item itemvalue="Python.YOLO_MiDaS_GridLayout_FIXED" />
+        <item itemvalue="Python.YOLO_MiDaS_GridLayout" />
+        <item itemvalue="Python.draw_grid_&amp;_objects_manually" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +262,16 @@
       <workItem from="1740507245550" duration="7364000" />
       <workItem from="1740632618585" duration="4263000" />
       <workItem from="1740643535240" duration="712000" />
+      <workItem from="1740647713363" duration="700000" />
+      <workItem from="1746247702697" duration="12107000" />
+      <workItem from="1746263091429" duration="4686000" />
+      <workItem from="1746810199867" duration="1000" />
+      <workItem from="1746873219319" duration="3051000" />
+      <workItem from="1746902713849" duration="599000" />
+      <workItem from="1746935104184" duration="599000" />
+      <workItem from="1746952423239" duration="601000" />
+      <workItem from="1747194291797" duration="11095000" />
+      <workItem from="1747267432040" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="Using ultralytics/yolov5">
       <option name="closed" value="true" />
@@ -182,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738251996155</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Using ultralytics/yolov5 - III">
+      <option name="closed" value="true" />
+      <created>1740664696785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740664696785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,19 +306,70 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Using ultralytics/yolov5" />
     <MESSAGE value="Using ultralytics/yolov5 - II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using ultralytics/yolov5 - II" />
+    <MESSAGE value="Using ultralytics/yolov5 - III" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using ultralytics/yolov5 - III" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/core/video_edge_and_line_detection.py</url>
+          <url>file://$PROJECT_DIR$/src/core/phase1/video_edge_and_line_detection.py</url>
           <line>352</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/core/visualize_layout.py</url>
+          <url>file://$PROJECT_DIR$/src/core/phase1/visualize_layout.py</url>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/left-right-image-pair-stereo camera.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/draw_grid_&amp;_objects_manually.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/draw_grid_&amp;_objects_manually.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/draw_grid_&amp;_objects_manually.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout_FIXED.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/core/phase2/older_approach/YOLO_MiDaS_GridLayout_FIXED.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -218,7 +384,14 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$video_edge_and_line_detection.coverage" NAME="video_edge_and_line_detection Coverage Results" MODIFIED="1737219113324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$self_practice.coverage" NAME="self_practice Coverage Results" MODIFIED="1734751948614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$DynamicGrid_ObjectPlacement.coverage" NAME="DynamicGrid_ObjectPlacement Coverage Results" MODIFIED="1747217664882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core/phase2" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$YOLO_MiDaS_GridLayout.coverage" NAME="YOLO_MiDaS_GridLayout Coverage Results" MODIFIED="1747199628804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core/phase2" />
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$room_object_detection.coverage" NAME="room_object_detection Coverage Results" MODIFIED="1740636642702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$YOLO_MiDaS_GridLayout_FIXED.coverage" NAME="YOLO_MiDaS_GridLayout_FIXED Coverage Results" MODIFIED="1747200459275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core/phase2" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$draw_grid___objects_manually.coverage" NAME="draw_grid_&amp;_objects_manually Coverage Results" MODIFIED="1746265367407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core/phase2" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$left_right_image_pair_stereo_camera.coverage" NAME="left-right-image-pair-stereo camera Coverage Results" MODIFIED="1746260786133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$DynamicGridMap.coverage" NAME="DynamicGridMap Coverage Results" MODIFIED="1747218184492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core/phase2" />
+    <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$2D_grid_from_disparity_map_edges.coverage" NAME="2D-grid-from-disparity-map&amp;edges Coverage Results" MODIFIED="1746260804616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
     <SUITE FILE_PATH="coverage/1_acquire_Initial_floor_plan_layout_master$room_object_detect.coverage" NAME="room_object_detect Coverage Results" MODIFIED="1738251469467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/core" />
   </component>
 </project>

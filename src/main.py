@@ -1,10 +1,10 @@
 import json
 import os
-from src.core.image_processor import process_floorplan_image
-from src.core.video_processor import process_video
-from src.core.visualize_layout import visualize_layout
+from src.core.phase1.image_processor import process_floorplan_image
+from src.core.phase1.video_processor import process_video
+from src.core.phase1.visualize_layout import visualize_layout
 from config import INPUT_DIR, OUTPUT_DIR, FLOORPLAN_IMAGE
-from src.core.numpy_encoder import NumpyEncoder  # Import the custom encoder
+from src.core.phase1.numpy_encoder import NumpyEncoder  # Import the custom encoder
 
 
 def image_main():

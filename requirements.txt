@@ -1,6 +1,7 @@
 pip
 pandas
 opencv-python
+opencv-contrib-python
 numpy
 ezdxf
 matplotlib
@@ -9,4 +10,4 @@ torchvision
 timm
 openvino
 #git+https://github.com/intel-isl/MiDaS.git
-
+tensorflow
